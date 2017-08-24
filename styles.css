@@ -1,0 +1,68 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background-image: url(img/main-bg.jpeg);
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar, .title, .navbar a {
+    font-family: 'Encode Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.navbar a {
+    font-size: 22px;
+}
+
+.title {
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    line-height: .1;
+}
+
+.title h1 {
+    font-size: 85px;
+    text-align: center;
+}
+
+.title h2 {
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.burger {
+    display: none;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 10px 10px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+}
